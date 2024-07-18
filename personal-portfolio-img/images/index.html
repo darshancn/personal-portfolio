@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a7f62d114d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo1.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web App Developer</p>
+                <h1>Hi, I'm <span>Darshan C N</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="myself.jpg" alt="Myself">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a dedicated and results-oriented individual, I am currently pursuing a Bachelor of Technology in Information Science and Engineering from Sri Jayachamarajendra College of Engineering, Mysuru, with a commendable CGPA of 8.81. My academic journey has been complemented by my proficiency in multiple programming languages including C, C++, Java, and Python, as well as my expertise in web development technologies such as HTML, CSS, JavaScript, and the MERN stack. My projects, like the "Movix" movie discovery app and the "Attendance Management System," showcase my ability to develop user-centric applications that enhance engagement and streamline processes. These experiences, along with relevant coursework in data structures, algorithms, OOPS, Computer Networks, DBMS, and software development, have honed my technical skills and problem-solving abilities.</p>
+                    <p>Beyond my technical prowess, I have demonstrated leadership and teamwork through achievements such as ranking 21st out of 1,023 participants on GeeksforGeeks from SJCE and excelling in district-level volleyball and kabaddi. My commitment to continuous learning is reflected in certifications like "Mastering Data Structures & Algorithms using C and C++" and "The Complete Python Bootcamp From Zero to Hero in Python." Additionally, my recent virtual internship in UI/UX Design at CodSoft has broadened my design thinking and user experience skills. With a strong foundation in technology and a passion for web development and data structures, I am eager to contribute to innovative projects and drive impactful results.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Languages: <span>C, C++, Java, Python</span></li>
+                            <li>Technologies and Libraries: <span>HTML, CSS, JavaScript, MERN Stack (MongoDB, Express.js, React, Node.js), MySQL, PHP</span></li>
+                            <li>Relevant Courses: <span>Data Structures, Algorithms, OOPS, DBMS, Operating System, Networking, Software development</span></li>
+                            <li>Areas of Interest: <span>Data structures and Algorithms, Web development</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>Not very much</li>
+                            <li>I have little experience in working in teams while doing Apps and web Applications in college</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Sri Jayachamarajendra College of Engineering, Mysuru (2020 - 2024)</span><br> Bachelor of Technology in Information Science And Engineering (CGPA: 8.81/10.0)</li>
+                            <li><span>SRS PU College, Chitradurga (2018 - 2020)</span><br> Karnataka Secondary Education Examination Board (Percentage: 82.00%)</li>
+                            <li><span>Vidya Vikasa Vidya Samsthe, Chitradurga (2017 - 2018)</span><br> Karnataka Secondary Education Examination Board (Percentage: 92.00%)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>As a passionate web developer with a strong foundation in Information Science and Engineering from Sri Jayachamarajendra College of Engineering, I specialize in creating dynamic, responsive, and user-friendly web applications. Proficient in languages like C, C++, Java, and Python, and experienced in technologies including HTML, CSS, JavaScript, and the MERN stack, I have developed notable projects such as "Movix" and an "Attendance Management System." My GitHub repository showcases a diverse portfolio of projects that reflect my expertise in leveraging modern web technologies to solve real-world problems and enhance user engagement. My services encompass full-stack development, user interface design, and the integration of real-time data, ensuring robust and scalable solutions tailored to meet client needs.</p>
+                    <a href="https://github.com/darshancn?tab=repositories">click here -- GitHub</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>As a dedicated UI/UX designer with a comprehensive background in Information Science and Engineering, I bring a blend of technical expertise and creative flair to every project. My GitHub repository, highlighted by projects developed during my CodSoft virtual internship, demonstrates my ability to create intuitive and visually appealing user interfaces. I excel in utilizing tools like HTML, CSS, JavaScript, and modern frameworks to design seamless and engaging user experiences. Whether it's crafting responsive layouts or enhancing user interaction, my services ensure that every digital product is not only functional but also delightful to use.</p>
+                    <a href="https://github.com/darshancn/CODSOFT">click here -- UI/UX Designs</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-apple-whole"></i>
+                    <h2>Mobile App</h2>
+                    <p>As a versatile Mobile App Developer, I combine my solid foundation in Information Science and Engineering with practical experience in creating innovative mobile applications using Flutter. My GitHub portfolio showcases a range of projects, including "CLIMA," a weather app providing real-time weather data; "BMI Calculator," a user-friendly health tracking tool; "Dice Game," an engaging entertainment app; and "Quizzler," an interactive quiz application. These projects highlight my ability to develop intuitive, responsive, and high-performance mobile applications tailored to enhance user experience and meet diverse needs.</p>
+                    <a href="https://github.com/darshancn/CLIMA/tree/main/Clima-Flutter-master/Clima-Flutter-master">CLIMA</a> <br>
+                    <a href="https://github.com/darshancn/BMI-calculator-flutter/tree/main/bmi-calculator-flutter-master/bmi-calculator-flutter-master">BMI Calculator</a><br>
+                    <a href="https://github.com/darshancn/Dice-game-flutter/tree/main/dicee-flutter-master/dicee-flutter-master">Dice Game</a><br>
+                    <a href="https://github.com/darshancn/quizzler-flutter/tree/main/quizzler-flutter-master/quizzler-flutter-master">Quizzler</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="Movix">
+                    <div class="layer">
+                        <h3>Movix</h3>
+                        <p>The app allows users to search for movies, view detailed information, and add movies to a watchlist.</p>
+                        <a href="https://movix-hazel-eight.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="Weather Index App">
+                    <div class="layer">
+                        <h3>Weather Index App</h3>
+                        <p>This app gives the weather description of any given city or place.</p>
+                        <a href="https://github.com/darshancn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="Attendance Management System">
+                    <div class="layer">
+                        <h3>Attendance Management System</h3>
+                        <p>This app gives the status of attendance and CIE of all or required students to the respective lecturers.</p>
+                        <a href="https://github.com/darshancn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>darshancn002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7411544275</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1qWmmZiaAXt0-dbGRL3Q0bVScAGDeYB2b/view?usp=drivesdk" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyrights @ Portfolio Website. Made with <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
